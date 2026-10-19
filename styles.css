@@ -237,6 +237,25 @@ body {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.grid-offer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card-wide {
+    grid-column: 1 / -1;
+}
+
+.dev-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.proj-idea {
+    border-left: 2px dashed #cfdeee;
+    padding-left: 12px;
+}
+
 .card {
     background: var(--card);
     border: 1px solid var(--line);
@@ -364,6 +383,12 @@ body {
 }
 
 /* ---------- Responsive ---------- */
+@media (max-width: 520px) {
+    .dev-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 760px) {
     .hero {
         padding: 52px 0 44px;
@@ -390,6 +415,10 @@ body {
     .grid,
     .grid-4 {
         grid-template-columns: 1fr;
+    }
+
+    .dev-grid {
+        grid-template-columns: 1fr 1fr;
     }
 
     .nav-links a {
