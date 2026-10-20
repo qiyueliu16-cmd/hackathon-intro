@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="刘淇悦（Qiyue Liu）—— 苏州大学临床医学（5+3）学生，独立 Vibe coding 过多个网站，10+ 个完成项目，8–10 个待落地临床点子，黑客松组队中。">
+    <meta property="og:title" content="刘淇悦 Qiyue Liu · 黑客松组队自我介绍">
+    <meta property="og:description" content="独立开发 + 临床研究双栈，多个上线工具，8–10 个等落地的临床点子。">
+    <meta property="og:type" content="profile">
+    <title>刘淇悦 Qiyue Liu · 黑客松组队自我介绍</title>
+    <style>
+:root {
+    --accent: #16558f;
+    --accent-deep: #0e3c68;
+    --accent-soft: #eef4fa;
+    --text: #24292f;
+    --text-soft: #57606a;
+    --line: #e3e8ee;
+    --bg: #fafbfc;
+    --card: #ffffff;
+    --radius: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ---------- Top nav ---------- */
+.topnav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(250, 251, 252, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+}
+
+.brand {
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--accent-deep);
+    text-decoration: none;
+}
+
+.nav-links a {
+    margin-left: 22px;
+    color: var(--text-soft);
+    text-decoration: none;
+    font-size: 0.92rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    padding: 76px 0 56px;
+    border-bottom: 1px solid var(--line);
+}
+
+.hero-kicker {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid #d5e4f2;
+    border-radius: 999px;
+    padding: 3px 14px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.hero h1 .en {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-soft);
+    margin-left: 10px;
+}
+
+.hero-role {
+    color: var(--text-soft);
+    font-size: 1.02rem;
+    margin-bottom: 18px;
+}
+
+.hero-line {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--accent-deep);
+    margin-bottom: 14px;
+}
+
+.hero-sub {
+    max-width: 680px;
+    color: var(--text-soft);
+    margin-bottom: 22px;
+}
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.tag {
+    font-size: 0.86rem;
+    color: var(--text-soft);
+    border: 1px solid var(--line);
+    background: var(--card);
+    border-radius: 999px;
+    padding: 4px 14px;
+}
+
+.hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.98rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px 26px;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--accent-deep);
+    box-shadow: 0 4px 14px rgba(22, 85, 143, 0.25);
+}
+
+.btn-ghost {
+    background: var(--card);
+    color: var(--accent-deep);
+    border: 1px solid #cfdeee;
+}
+
+.btn-ghost:hover {
+    border-color: var(--accent);
+}
+
+/* ---------- Stats ---------- */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 36px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.stat {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 20px 18px;
+    text-align: center;
+}
+
+.stat-num {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--accent-deep);
+    line-height: 1.2;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-soft);
+    margin-top: 6px;
+}
+
+/* ---------- Sections ---------- */
+.section {
+    padding: 52px 0 8px;
+}
+
+.section h2 {
+    font-size: 1.45rem;
+    margin-bottom: 22px;
+    padding-left: 12px;
+    border-left: 4px solid var(--accent);
+    line-height: 1.3;
+}
+
+.prose {
+    max-width: 760px;
+    color: var(--text-soft);
+    margin-bottom: 14px;
+}
+
+/* ---------- Project cards ---------- */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-offer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card-wide {
+    grid-column: 1 / -1;
+}
+
+.dev-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.proj-idea {
+    border-left: 2px dashed #cfdeee;
+    padding-left: 12px;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 24px;
+}
+
+.card > h3 {
+    font-size: 1.05rem;
+    color: var(--accent-deep);
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed var(--line);
+}
+
+.proj + .proj {
+    margin-top: 14px;
+}
+
+.proj h4 {
+    font-size: 0.96rem;
+    margin-bottom: 4px;
+}
+
+.proj h4::before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-right: 8px;
+    vertical-align: 2px;
+}
+
+.proj p {
+    font-size: 0.9rem;
+    color: var(--text-soft);
+    padding-left: 15px;
+}
+
+/* ---------- Offer ---------- */
+.offer {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 20px;
+}
+
+.offer h4 {
+    font-size: 0.98rem;
+    color: var(--accent-deep);
+    margin-bottom: 8px;
+}
+
+.offer p {
+    font-size: 0.88rem;
+    color: var(--text-soft);
+}
+
+/* ---------- Contact ---------- */
+.contact {
+    padding-bottom: 56px;
+}
+
+.contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.contact-item {
+    flex: 1;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 18px 22px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.contact-item:hover {
+    border-color: var(--accent);
+}
+
+.contact-label {
+    font-size: 0.82rem;
+    color: var(--text-soft);
+}
+
+.contact-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-deep);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    border-top: 1px solid var(--line);
+    padding: 22px 0 30px;
+}
+
+.footer p {
+    font-size: 0.82rem;
+    color: var(--text-soft);
+}
+
+/* ---------- Reveal animation ---------- */
+.reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 520px) {
+    .dev-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 760px) {
+    .hero {
+        padding: 52px 0 44px;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero h1 .en {
+        display: block;
+        margin-left: 0;
+        font-size: 1.1rem;
+    }
+
+    .hero-line {
+        font-size: 1.12rem;
+    }
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .dev-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nav-links a {
+        margin-left: 14px;
+        font-size: 0.86rem;
+    }
+}
+
+</style>
+</head>
+<body>
+    <nav class="topnav">
+        <div class="wrap nav-inner">
+            <a class="brand" href="#top">QY.LIU</a>
+            <div class="nav-links">
+                <a href="#about">关于</a>
+                <a href="#projects">项目</a>
+                <a href="#offer">我能带来</a>
+                <a href="#contact">联系</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="wrap" id="top">
+        <!-- Hero -->
+        <section class="hero reveal">
+            <p class="hero-kicker">黑客松组队中 · 可远程协作</p>
+            <h1>刘淇悦 <span class="en">Qiyue Liu</span></h1>
+            <p class="hero-role">苏州大学 · 临床医学（5+3）· 2024 级</p>
+            <p class="hero-line">独立 Vibe coding 过许多网站，面向苏州大学附属第一医院多科室主任做过调查，结合思考攒了一些临床问题。</p>
+            <p class="hero-sub">做过最好用的课程表、自用的选股系统和高铁余量监控 MVP，也跑通过 meta-analysis、分子动力学、单细胞组学等多类研究管线；手上还有 8–10 个等落地的临床点子，以及一个想投入长期实践的项目想法，需要想长期合作的团队。来找队友，也找能把点子做成产品的合作者。</p>
+            <div class="hero-tags">
+                <span class="tag">🩺 临床背景</span>
+                <span class="tag">🛠 独立开发</span>
+                <span class="tag">🧪 组学数据</span>
+                <span class="tag">💻 R / Python 全栈</span>
+                <span class="tag">🤝 开放组队</span>
+            </div>
+            <div class="hero-cta">
+                <a class="btn btn-primary" href="https://github.com/qiyueliu16-cmd" target="_blank" rel="noopener">GitHub 主页</a>
+                <a class="btn btn-ghost" href="mailto:liuqiyue2024@hotmail.com?subject=黑客松组队">邮件联系我</a>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="stats reveal">
+            <div class="stat">
+                <span class="stat-num">8–10</span>
+                <span class="stat-label">待落地临床点子*</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num">10+</span>
+                <span class="stat-label">完成项目（研究 + 工具）</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num">多个</span>
+                <span class="stat-label">独立 Vibe coding 网站</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num">3 × 100ns</span>
+                <span class="stat-label">分子动力学模拟</span>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section reveal">
+            <h2>关于我</h2>
+            <p class="prose">临床医学“5+3”在读，日常在病房、代码和数据之间来回。研究训练从循证医学开始，先后独立跑通 meta-analysis、分子对接与 100ns 分子动力学、单细胞转录组与孟德尔随机化多类管线；业余独立 Vibe coding 过许多网站，把自己和身边人的真实需求做成能用的工具，其中最好用的课程表、自用的选股系统和高铁余量监控 MVP 是代表作。</p>
+            <p class="prose">曾面向苏州大学附属第一医院多个科室的主任做调查，结合临床里的观察与思考，攒下一批想做的临床问题，也一直在补实现这些问题所需的能力。相信好的医疗产品是从真实问题里长出来的，黑客松是把两件事接上的最好场合。</p>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section reveal">
+            <h2>完成过的项目</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>循证医学 · Meta 分析</h3>
+                    <div class="proj">
+                        <h4>GHRL Leu72Met（g.+408C>A）多态性 Meta 分析</h4>
+                        <p>覆盖 BMI、WHR、WC、FINS、HOMA-IR、FBG、HDL-C、LDL-C、TG、TC 十个连续型表型，聚焦肥胖结局。自建 266×21 文献数据抽取库，预留效应量公式列，全流程可复现。</p>
+                    </div>
+                    <div class="proj">
+                        <h4>GSTT1 / GSTM1 缺失基因型 Meta 分析</h4>
+                        <p>从文献筛选、质量评价到异质性与亚组分析的完整循证流程。</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3>分子模拟 · 药物重定位</h3>
+                    <div class="proj">
+                        <h4>PFNA 多靶点分子对接</h4>
+                        <p>对 20 个受体开展分子对接，覆盖药物代谢酶（SULT2A1、CYP2C8、OATP1B1）与肿瘤相关靶点（PCNA、RRM2、ASF1B、EXO1、E2F8、TK1、CDC6、DHX9、CDK7）。</p>
+                    </div>
+                    <div class="proj">
+                        <h4>三组 100ns GROMACS 分子动力学</h4>
+                        <p>amber14sb + GAFF2/AM1-BCC 体系，GPU 加速跑完三组 100ns 轨迹，含 OATP1B1 结合构象变化的动态分析。</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3>单细胞 · 多组学</h3>
+                    <div class="proj">
+                        <h4>GSE222315 膀胱癌 10x scRNA-seq 全流程</h4>
+                        <p>从 QC、Harmony 整合、UMAP 聚类到 inferCNV 完整链路，锁定肿瘤上皮内的 DHX9 表达与 CNV 特征。</p>
+                    </div>
+                    <div class="proj">
+                        <h4>虚拟敲除交叉验证</h4>
+                        <p>Geneformer in-silico KO 与 scTenifoldKnk 双方法互证，SLCO1B1 已完成。</p>
+                    </div>
+                    <div class="proj">
+                        <h4>六个 GEO 微阵列分析</h4>
+                        <p>R oligo + limma 完成差异表达与 GO/KEGG 富集。</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3>因果推断 · 网络毒理学</h3>
+                    <div class="proj">
+                        <h4>肝细胞癌孟德尔随机化</h4>
+                        <p>暴露端 eQTLGen 与多队列 pQTL（ARIC、deCODE、FinnGen R13），结局端 FinnGen R13 与 Ghouse 2025 GWAS，含敏感性分析。</p>
+                    </div>
+                    <div class="proj">
+                        <h4>BPA–HCC 网络毒理学</h4>
+                        <p>从暴露、靶点到通路的完整网络药理学流程，代码已归档。</p>
+                    </div>
+                    <div class="proj">
+                        <h4>冠脉钙化 SMR/MR 验证</h4>
+                        <p>遗传关联到单细胞层面的多证据链研究。</p>
+                    </div>
+                </article>
+
+                <article class="card card-wide">
+                    <h3>独立开发 · 网站与工具</h3>
+                    <div class="dev-grid">
+                        <div class="proj">
+                            <h4>课程表 · 最好用的一个</h4>
+                            <p>从排课、提醒到导出一整套，是上线作品里反馈最好的一个。</p>
+                        </div>
+                        <div class="proj">
+                            <h4>自用选股系统</h4>
+                            <p>量化选股与盘后诊断，量价、筹码与 regime 闸门跑在自己的数据管线上。</p>
+                        </div>
+                        <div class="proj">
+                            <h4>高铁余量监控 MVP</h4>
+                            <p>盯着余票变化并推送提醒的最小可用版本，出行需求催生的自用工具。</p>
+                        </div>
+                        <div class="proj">
+                            <h4>医学提示词优化系统（已做基础版本，待完善）</h4>
+                            <p>把临床常用提示词做系统化优化与评测，基础版本已经搭起来，持续打磨中。</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Offer -->
+        <section id="offer" class="section reveal">
+            <h2>我能为队伍带来什么</h2>
+            <div class="grid grid-offer">
+                <div class="offer">
+                    <h4>临床问题的嗅觉</h4>
+                    <p>从科室真实场景里提炼可验证、可度量的问题，知道哪些痛点值得做成产品。</p>
+                </div>
+                <div class="offer">
+                    <h4>独立开发能力</h4>
+                    <p>Vibe coding 全栈，多个网站从想法到上线都是一个人完成。</p>
+                </div>
+                <div class="offer">
+                    <h4>全栈数据能力</h4>
+                    <p>R / Python 双栈，meta、MD、scRNA、MR 四类管线均从零独立跑通。</p>
+                </div>
+                <div class="offer">
+                    <h4>长周期执行力</h4>
+                    <p>多个项目以月为单位迭代，从原始数据一路做到成图成表的结论。</p>
+                </div>
+                <div class="offer">
+                    <h4>现成点子库</h4>
+                    <p>8–10 个临床选题在手，入队即可认领方向，不用从零想题。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Looking for -->
+        <section class="section reveal">
+            <h2>正在寻找</h2>
+            <p class="prose">前端、产品、设计或临床方向的伙伴，一起把医疗 AI、数字疗法或临床工具从点子做成能演示的 Demo，比如把医学提示词优化系统从基础版打磨成完整产品，入队即可上手。远程协作没问题，沟通响应快。</p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section contact reveal">
+            <h2>联系我</h2>
+            <div class="contact-row">
+                <a class="contact-item" href="https://github.com/qiyueliu16-cmd" target="_blank" rel="noopener">
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">github.com/qiyueliu16-cmd</span>
+                </a>
+                <button class="contact-item" id="copyEmail" type="button">
+                    <span class="contact-label">Email（点击复制）</span>
+                    <span class="contact-value">liuqiyue2024@hotmail.com</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap">
+            <p>* 点子数按当前研究主线统计 · 本页由 GitHub Pages 托管 · 更新于 2026 年 10 月</p>
+        </div>
+    </footer>
+
+    <script>
+// Reveal on scroll
+(function () {
+    var items = document.querySelectorAll(".reveal");
+    if (!("IntersectionObserver" in window)) {
+        items.forEach(function (el) { el.classList.add("visible"); });
+        return;
+    }
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.08 });
+    items.forEach(function (el) { observer.observe(el); });
+})();
+
+// Copy email to clipboard
+(function () {
+    var btn = document.getElementById("copyEmail");
+    if (!btn) { return; }
+    var valueEl = btn.querySelector(".contact-value");
+    var original = valueEl.textContent;
+    btn.addEventListener("click", function () {
+        var email = "liuqiyue2024@hotmail.com";
+        function done() {
+            valueEl.textContent = "已复制 ✓ " + email;
+            setTimeout(function () { valueEl.textContent = original; }, 1800);
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(email).then(done).catch(function () { fallback(); });
+        } else {
+            fallback();
+        }
+        function fallback() {
+            var tmp = document.createElement("input");
+            tmp.value = email;
+            document.body.appendChild(tmp);
+            tmp.select();
+            try { document.execCommand("copy"); done(); } catch (e) { /* noop */ }
+            document.body.removeChild(tmp);
+        }
+    });
+})();
+
+</script>
+</body>
+</html>
